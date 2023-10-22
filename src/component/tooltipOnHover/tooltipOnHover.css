@@ -1,0 +1,90 @@
+/* Wrapping */
+.Tooltip-Wrapper {
+    position: relative;
+    display: flex;
+    width: min-content;
+    white-space: nowrap;
+}
+
+/* Absolute positioning */
+.Tooltip-Tip {
+    position: absolute;
+    border-radius: 4px;
+    padding: 6px;
+    color: var(--black-color1);
+    background: var(--black-color3);
+    font-size: var(--smallFont);
+    font-family: sans-serif;
+    line-height: 1;
+    z-index: 100;
+    white-space: nowrap;
+}
+
+/* CSS border triangles */
+.Tooltip-Tip::before {
+    content: " ";
+    left: 50%;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 5px;
+    margin-left: -5px;
+}
+
+/* Absolute positioning */
+.Tooltip-Tip.top {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 120%;
+}
+
+/* CSS border triangles */
+.Tooltip-Tip.top::before {
+    top: 100%;
+    border-top-color: var(--black-color3);
+}
+
+/* Absolute positioning */
+.Tooltip-Tip.right {
+    left: 120%;
+    top: 50%;
+    transform: translateX(0) translateY(-50%);
+}
+
+/* CSS border triangles */
+.Tooltip-Tip.right::before {
+    left: -4%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right-color: var(--black-color3);
+}
+
+/* Absolute positioning */
+.Tooltip-Tip.bottom {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120%;
+}
+
+/* CSS border triangles */
+.Tooltip-Tip.bottom::before {
+    bottom: 100%;
+    border-bottom-color: var(--black-color3);
+}
+
+/* Absolute positioning */
+.Tooltip-Tip.left {
+    right: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* CSS border triangles */
+.Tooltip-Tip.left::before {
+    left: 105%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left-color: var(--black-color3);
+}

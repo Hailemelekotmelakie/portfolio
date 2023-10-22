@@ -1,0 +1,45 @@
+.optionSelectBox {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: var(--mediumFont);
+}
+
+.optionSelectBox__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    border: thin solid var(--black-color2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.optionSelectBox__header span:first-child {
+    margin-right: 10px;
+}
+
+.optionSelectBox__options {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: auto;
+    overflow-y: auto;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: var(--black-color1);
+    border: thin solid var(--black-color2);
+    max-height: 150px;
+}
+
+.optionSelectBox__option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.optionSelectBox__option:hover {
+    background-color: var(--black-color2);
+}
