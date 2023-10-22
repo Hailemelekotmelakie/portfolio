@@ -1,0 +1,79 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: var(--padding);
+    height: 90vh;
+}
+
+.c-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.get-in-touch {
+    color: var(--black-color2);
+    font-size: var(--largeFont);
+    font-weight: 900;
+}
+
+.contact-us {
+    color: var(--primary-color);
+    font-size: var(--largeFont);
+    font-weight: 700;
+}
+
+.c-right {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.c-text,
+.c-email {
+    font-size: var(--mediumFont);
+    padding: 10px;
+    border: thin solid var(--black-color2);
+    border-radius: 5px;
+    color: var(--black-color3);
+    outline: none;
+    transition: all 0.4s;
+    background-color: transparent;
+}
+
+.c-email:focus,
+.c-text:focus {
+    animation: 0.4s animateAnInput alternate;
+    border-color: var(--primary-color);
+}
+
+@keyframes animateAnInput {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.c-email:hover,
+.c-text:hover {
+    transition: 1s;
+    border-color: var(--primary-color);
+}
+
+@media screen and (max-width: 800px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}

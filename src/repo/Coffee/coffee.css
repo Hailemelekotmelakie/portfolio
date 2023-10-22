@@ -1,0 +1,221 @@
+.coffeeContainer {
+    padding: var(--padding);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 77vh;
+    padding-top: 40px;
+    gap: 10px;
+    background: linear-gradient(160deg, transparent 50%, color-mix(in srgb, var(--yellow-color) 50%, transparent));
+}
+
+.coffeeLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.coffeeBold {
+    font-size: var(--extraLargeFont);
+    font-weight: 600;
+    line-height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    color: var(--black-color3);
+}
+
+.coffeeProductivity {
+    font-size: var(--mediumFont);
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: var(--black-color3);
+}
+
+.coffeeRight {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: -1;
+}
+
+.coffeeHomeRhombus {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 30px;
+    height: 50px;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #5c1f15;
+}
+
+.coffeeHomeRhombusGreen {
+    position: absolute;
+    top: -100px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    background-color: #3f0d06;
+    transform: rotate(45deg);
+    animation: translationgGreen 3s infinite
+}
+
+@keyframes translationgGreen {
+    0% {
+        translate: 0px
+    }
+
+    50% {
+        translate: 100px
+    }
+
+    100% {
+        translate: 0px
+    }
+
+}
+
+.coffeeHomeCircle {
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transform: rotate(45deg);
+}
+
+.coffeePaymentContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    gap: 10px;
+    width: 100%;
+}
+
+.coffeePaymentTelebirr {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--black-color2);
+}
+
+.coffeePaymentTelebirrHead {
+    font-size: var(--midiumFont);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.coffeePaymentTelebirrAccount {
+    font-size: var(--smallFont);
+    padding-left: 20px;
+    color: var(--black-color3);
+}
+
+.coffeePaymentTelebirrAccount span {
+    font-size: var(--extraSmallFont);
+    user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+    .coffeeContainer {
+        padding: var(--padding);
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding-top: 50px;
+    }
+
+    .coffeeBold {
+        font-size: var(--largeFont);
+        text-align: center;
+        padding: 0 30px;
+        line-height: normal;
+        align-self: center;
+    }
+
+    .coffeeRight {
+        margin-top: 20px;
+    }
+
+    .coffeeHomeRhombus {
+        top: 10px;
+        right: 0;
+        width: 25px;
+        height: 24px;
+        animation: none;
+    }
+
+    .coffeeHomeRhombusGreen {
+        top: 0px;
+        left: 5px;
+        animation: none;
+    }
+
+    .coffeeHomeCircle {
+        bottom: 0px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .coffeeContainer {
+        height: max-content;
+        padding: var(--padding);
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+    }
+
+    .coffeeBold {
+        font-size: var(--largeFont);
+        text-align: center;
+        padding: 0 30px;
+        line-height: normal;
+        align-self: center;
+    }
+
+    .coffeeRight {
+        margin-top: 20px;
+    }
+
+    .coffeeHomeRhombus {
+        top: 10px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .coffeeHomeRhombusGreen {
+        top: 0px;
+        left: 5px;
+    }
+
+    .coffeeHomeCircle {
+        bottom: 0px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+    }
+}

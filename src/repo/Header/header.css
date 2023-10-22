@@ -1,0 +1,98 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+    border-bottom: 2px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
+    backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
+    position: sticky;
+    background-color: color-mix(in srgb, var(--black-color1) 60%, transparent);
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex: 1;
+}
+
+.headerRight p {
+    font-size: var(--mediumFont);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.headerName {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--largeFont);
+    font-weight: bolder;
+    cursor: pointer;
+    user-select: none;
+}
+
+.headerNameUnique {
+    color: var(--primary-color);
+}
+
+.headerName span:hover {
+    transition: all .2s;
+    color: var(--primary-color);
+}
+
+.headerThemeBlack {
+    position: fixed;
+    background-color: transparent;
+    animation: animateThemeDark 0.8s alternate;
+    border-radius: 50%;
+    padding: 0;
+    border: 0px solid var(--primary-color);
+}
+
+@keyframes animateThemeDark {
+    0% {
+        transform: scale(0);
+        border: 0px solid var(--primary-color);
+    }
+
+    100% {
+        transform: scale(90);
+        padding: 20px;
+        border: 10px solid var(--primary-color);
+    }
+}
+
+.headerThemeLight {
+    position: fixed;
+    background-color: black;
+    animation: animateThemeLight 2s alternate;
+    border-radius: 50%;
+    padding: 0;
+    border: 0px solid var(--primary-color);
+    align-self: center;
+}
+
+@keyframes animateThemeLight {
+    0% {
+        transform: scale(90);
+        padding: 20px;
+        border: 10px solid var(--primary-color);
+    }
+
+    100% {
+        transform: scale(0);
+        border: 0px solid var(--primary-color);
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {}
