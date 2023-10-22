@@ -1,0 +1,80 @@
+:root {
+      --extraLargeFont: 45px;
+      --largeFont: 27px;
+      --mediumFont: 16px;
+      --smallFont: 14px;
+      --extraSmallFont: 10px;
+      --padding: 5px 200px;
+      --primary-color: #23f8ae;
+      --yellow-color: #d49902;
+      --black-color1: #000000;
+      --black-color2: #3b3a3a;
+      --black-color3: #888888;
+
+      color-scheme: dark;
+}
+
+.light {
+      --extraLargeFont: 45px;
+      --largeFont: 27px;
+      --mediumFont: 16px;
+      --smallFont: 14px;
+      --extraSmallFont: 10px;
+      --padding: 5px 200px;
+      --primary-color: #07e094;
+      --black-color1: #ffffff;
+      --black-color2: #dddddd;
+      --black-color3: #9c9999;
+
+      color-scheme: light;
+}
+
+html {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: var(--black-color1);
+      color: var(--black-color3);
+      scroll-behavior: smooth;
+}
+
+input {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+      :root {
+            --padding: 10px 10px;
+      }
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      transition: all .2s;
+}
+
+::selection {
+      background-color: var(--black-color2);
+      color: var(--primary-color);
+}
+
+/* width */
+::-webkit-scrollbar {
+      width: 10px;
+      height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+      background: var(--white-color);
+      border-left: 1px solid var(--primary-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+      background: var(--black-color2);
+}
