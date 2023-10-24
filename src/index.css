@@ -5,11 +5,14 @@
       --smallFont: 14px;
       --extraSmallFont: 10px;
       --padding: 5px 200px;
-      --primary-color: #23f8ae;
-      --yellow-color: #d49902;
+      --primary-color: #6366f1;
+      --yellow-color: #efac01;
       --black-color1: #000000;
       --black-color2: #3b3a3a;
       --black-color3: #888888;
+      --gradient1: #ff8a00, #e52e71, #6610f2, #009688;
+      --gradient2: #e11d48, #6366f1, #e11d48;
+      --gradient3: #ff6d80, #d946ef, #b663f1;
 
       color-scheme: dark;
 }
@@ -21,10 +24,14 @@
       --smallFont: 14px;
       --extraSmallFont: 10px;
       --padding: 5px 200px;
-      --primary-color: #07e094;
+      --primary-color: #00ab66;
+      --yellow-color: #efac01;
       --black-color1: #ffffff;
       --black-color2: #dddddd;
       --black-color3: #9c9999;
+      --gradient1: #ff8a00, #e52e71, #6610f2, #009688;
+      --gradient2: #e11d48, #6366f1, #e11d48;
+      --gradient3: #ff6d80, #d946ef, #b663f1;
 
       color-scheme: light;
 }
@@ -36,12 +43,23 @@ html {
       scroll-behavior: smooth;
 }
 
-input {
+input,
+button {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+      text-decoration: none;
+      color: var(--black-color1);
 }
 
 @media screen and (max-width: 800px) {
       :root {
+            --extraLargeFont: 35px;
+            --largeFont: 20px;
+            --mediumFont: 14px;
+            --smallFont: 12px;
+            --extraSmallFont: 9px;
             --padding: 10px 10px;
       }
 }
@@ -65,16 +83,16 @@ input {
 
 /* Track */
 ::-webkit-scrollbar-track {
-      background: var(--white-color);
+      background: transparent;
       border-left: 1px solid var(--primary-color);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-      background: var(--primary-color);
+      background: linear-gradient(45deg, var(--gradient3));
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-      background: var(--black-color2);
+      background: var(--primary-color)
 }

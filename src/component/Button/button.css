@@ -1,16 +1,16 @@
 .componentButton {
     font-size: var(--mediumFont);
     background-color: var(--primary-color);
+    background: linear-gradient(to right, var(--gradient3));
     color: var(--black-color1);
     display: flex;
     align-self: center;
     padding: 12px 20px;
-    border-radius: 16px;
+    border-radius: 5px;
     outline: none;
     border: none;
-    font-weight: 500;
     cursor: pointer;
-    transition: all 0.4s;
+    transition: all 0.2s;
 }
 
 .componentButton:active {
@@ -19,5 +19,5 @@
 
 .componentButton:hover {
     cursor: pointer;
-    background-color: color-mix(in srgb, var(--primary-color) 60%, transparent);
+    opacity: 0.7;
 }

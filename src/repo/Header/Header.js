@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import "./header.css";
 import ThemeContext from "../../context/themeContext";
 import TooltipOnHover from "../../component/tooltipOnHover/tooltipOnHover";
+import { IconMoon, IconSun } from "@tabler/icons-react";
 
 export default function Header() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -62,8 +63,17 @@ export default function Header() {
           onClick={() => {
             themeChange();
           }}
+          type="themeIcon"
         >
-          Theme
+          {theme === "dark" ? (
+            <IconMoon
+              color="transparent"
+              fill="var(--primary-color)"
+              size={20}
+            />
+          ) : (
+            <IconSun color="var(--primary-color)" size={20} />
+          )}
           <span
             className={`${
               theme === "light" ? "headerThemeBlack" : "headerThemeLight"

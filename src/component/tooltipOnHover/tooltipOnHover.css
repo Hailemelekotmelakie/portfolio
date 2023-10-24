@@ -12,7 +12,8 @@
     border-radius: 4px;
     padding: 6px;
     color: var(--black-color1);
-    background: var(--black-color3);
+    background-color: var(--black-color3);
+    background: linear-gradient(45deg, var(--gradient3));
     font-size: var(--smallFont);
     font-family: sans-serif;
     line-height: 1;

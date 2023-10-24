@@ -1,7 +1,7 @@
 import React from "react";
 import "./Intro.css";
 import Button from "../../component/Button/button";
-import TooltipOnHover from "../../component/tooltipOnHover/tooltipOnHover";
+import { SocialIcon } from "react-social-icons";
 
 const Intro = () => {
   return (
@@ -12,24 +12,34 @@ const Intro = () => {
           <span className="s-description">
             I am a fullstack web developer, with two years of experience.
           </span>
-          <TooltipOnHover
-            direction="bottom"
-            content="Please hang me a call on +251947053537"
-          >
+          <a href="#contactMePlease" style={{ alignSelf: "center" }}>
             <Button>Work with me</Button>
-          </TooltipOnHover>
+          </a>
           <div className="i-blur1"></div>
         </div>
         <div className="iconsContainer">
-          <a target="__blank" href="www.linkedin.com">
-            <img className="icons" src={"/images/linkedin.png"} alt="icons" />
-          </a>
-          <a target="__blank" href="www.facebook.com">
-            <img className="icons" src={"/images/facebook.png"} alt="icons" />
-          </a>
-          <a target="__blank" href="www.instagram.com">
-            <img className="icons" src={"/images/Instagram.png"} alt="icons" />
-          </a>
+          <SocialIcon
+            className="icons"
+            network="linkedin"
+            bgColor="transparent"
+            url="www.vimeo.com"
+            fgColor="var(--black-color2)"
+          />
+
+          <SocialIcon
+            className="icons"
+            bgColor="transparent"
+            fgColor="var(--black-color2)"
+            network="github"
+            url="www.vimeo.com"
+          />
+          <SocialIcon
+            className="icons"
+            network="facebook"
+            fgColor="var(--black-color2)"
+            url="www.vimeo.com"
+            bgColor="transparent"
+          />
         </div>
       </div>
       <div className="i-right">

@@ -6,6 +6,7 @@ import ThemeContext from "../context/themeContext";
 import Footer from "./Footer/Footer";
 import Coffee from "./Coffee/Coffee";
 import Contact from "./Contact/Contact";
+import Skills from "./Skills/Skills";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -16,6 +17,7 @@ function App() {
       <Intro />
       <Services />
       <Coffee />
+      <Skills />
       <Contact />
       <Footer />
     </ThemeContext.Provider>

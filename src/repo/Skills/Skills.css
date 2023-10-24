@@ -1,46 +1,232 @@
-.s-container {
+.skillContainer {
+    padding: var(--padding);
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-height: 100vh;
 }
 
-@media screen and (max-width: 800px) {
-    .s-container {
-        flex-direction: column;
+.mySkillsHeading {
+    padding: 5px 0;
+    color: var(--primary-color);
+    align-self: center;
+    font-size: var(--extraLargeFont);
+    background: linear-gradient(30deg, var(--gradient2));
+    font-weight: 900;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.mySkillsHeading2 {
+    padding: 5px 0;
+    color: var(--black-color3);
+    align-self: center;
+    font-size: var(--mediumFont);
+}
+
+.mySkills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.mySkillsLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px
+}
+
+.mySkillsLeftPL {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mySkillsLeftPL p {
+    font-size: var(--smallFont);
+}
+
+.mySkillsLeftPL div {
+    height: 9px;
+    width: 100%;
+    background-color: var(--black-color2);
+    border-radius: 20px;
+    position: relative;
+}
+
+.mySkillsLeftPL div::before {
+    position: absolute;
+    content: " ";
+    z-index: 1;
+    height: 9px;
+    background-color: var(--primary-color);
+    background: linear-gradient(90deg, var(--gradient3));
+    border-radius: 20px;
+    /* box-shadow: 0px 1px 9px var(--primary-color); */
+}
+
+.mySkillsLeftReact div::before {
+    width: 90%;
+    animation: 4s animateReact alternate;
+}
+
+@keyframes animateReact {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%
     }
 }
 
-.Familier-languages {
-    font-weight: 800;
-    font-size: var(--mediumFont);
-    color: #fca61f;
-    text-align: center;
-    margin: 15px;
+.mySkillsLeftExpress div::before {
+    width: 77%;
+    animation: 4s animateExpress alternate;
 }
 
-.skills-left {
+@keyframes animateExpress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 77%
+    }
+}
+
+.mySkillsLeftNext div::before {
+    width: 80%;
+    animation: 4s animateNext alternate;
+}
+
+@keyframes animateNext {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%
+    }
+}
+
+.mySkillsLeftVue div::before {
+    width: 45%;
+    animation: 4s animateVue alternate;
+}
+
+@keyframes animateVue {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%
+    }
+}
+
+.mySkillsLeftMYSQL div::before {
+    width: 86%;
+    animation: 4s animateMYSQL alternate;
+}
+
+@keyframes animateMYSQL {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 86%
+    }
+}
+
+.mySkillsLeftPOSTGRES div::before {
+    width: 70%;
+    animation: 4s animatePOSTGRES alternate;
+}
+
+@keyframes animatePOSTGRES {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%
+    }
+}
+
+.mySkillsLeftMongDB div::before {
+    width: 45%;
+    animation: 4s animateMongDB alternate;
+}
+
+@keyframes animateMongDB {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%
+    }
+}
+
+.mySkillsRight {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    align-items: center;
 }
 
-.skills-right {
+
+.circleContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+}
+
+.pieContaine {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    gap: 10px;
+    align-items: center;
 }
 
-.s-header {
-    font-weight: 800;
-    font-size: var(--mediumFont);
-    color: black;
-    margin: 15px;
+.pie {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
-.languages {
-    font-size: var(--mediumFont);
-    text-indent: 20px;
-    margin: 3px;
-    opacity: 0.7;
+.pie[q="50"] {
+    background-image: conic-gradient(var(--primary-color) 180deg, var(--black-color3) 180deg);
+}
+
+.pie[q="60"] {
+    background-image: conic-gradient(var(--primary-color) 216deg, var(--black-color3) 216deg);
+}
+
+.pie[q="75"] {
+    background-image: conic-gradient(var(--primary-color) 270deg, var(--black-color3) 270deg);
+}
+
+.pie[q="80"] {
+    background-image: conic-gradient(var(--primary-color) 288deg, var(--black-color3) 288deg);
+}
+
+@media screen and (max-width: 800px) {
+    .mySkills {
+        flex-direction: column;
+        gap: 35px;
+    }
 }

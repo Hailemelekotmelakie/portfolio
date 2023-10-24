@@ -5,7 +5,7 @@ import Button from "../../component/Button/button";
 const Contact = () => {
   const Arrays = ["React JS", "Node JS", "Vue JS", "Express JS"];
   return (
-    <div className="contact-container">
+    <div id="contactMePlease" className="contact-container">
       <div className="c-left">
         <span className="get-in-touch">Get In Touch</span>
         <span className="contact-us">Contact Us</span>

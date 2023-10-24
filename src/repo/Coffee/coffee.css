@@ -7,7 +7,19 @@
     min-height: 77vh;
     padding-top: 40px;
     gap: 10px;
-    background: linear-gradient(160deg, transparent 50%, color-mix(in srgb, var(--yellow-color) 50%, transparent));
+    position: relative;
+}
+
+.coffeeContainer::before {
+    height: 200px;
+    width: 200px;
+    background-color: var(--primary-color);
+    position: absolute;
+    content: " ";
+    bottom: 10%;
+    right: 30%;
+    z-index: -1;
+    filter: blur(110px);
 }
 
 .coffeeLeft {
@@ -26,7 +38,16 @@
     display: flex;
     flex-direction: column;
     align-self: baseline;
-    color: var(--black-color3);
+    color: var(--primary-color);
+
+
+}
+
+.coffeeBold span {
+    background: linear-gradient(45deg, var(--gradient2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .coffeeProductivity {
@@ -109,7 +130,7 @@
 .coffeePaymentTelebirr {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 10px 3px 10px;
     gap: 10px;
     border-radius: 5px;
     border: 1px solid var(--black-color2);
@@ -121,7 +142,7 @@
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
-    color: var(--primary-color);
+    color: var(--black-color3);
 }
 
 .coffeePaymentTelebirrAccount {
@@ -133,6 +154,16 @@
 .coffeePaymentTelebirrAccount span {
     font-size: var(--extraSmallFont);
     user-select: none;
+}
+
+.iconCaretRight {
+    transform: rotate(90deg);
+    animation: all 1s ease-in-out;
+}
+
+.iconCaretLeft {
+    transform: rotate(0deg);
+    animation: all 1s ease-in-out;
 }
 
 @media screen and (max-width: 600px) {

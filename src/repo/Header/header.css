@@ -28,6 +28,11 @@
     font-weight: 600;
     cursor: pointer;
     position: relative;
+    align-self: center;
+}
+
+.headerRight p[type="themeIcon"] {
+    transform: translateY(2px);
 }
 
 .headerName {

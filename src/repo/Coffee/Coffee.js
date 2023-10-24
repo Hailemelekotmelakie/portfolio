@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./coffee.css";
+import { IconCaretRight } from "@tabler/icons-react";
 export default function Coffee() {
   const [fold, setFolded] = useState();
 
@@ -22,8 +23,7 @@ export default function Coffee() {
     <div className="coffeeContainer">
       <div className="coffeeLeft">
         <div className="coffeeBold">
-          BUY ME{" "}
-          <span style={{ color: "var(--primary-color" }}>A CUP OF COFFEE</span>
+          BUY ME <span>A CUP OF COFFEE</span>
         </div>
         <div className="coffeeProductivity">
           Boost my productivity and build my mood with a cup of cofee
@@ -38,11 +38,24 @@ export default function Coffee() {
                   }}
                   className="coffeePaymentTelebirrHead"
                 >
-                  <p>{pay.name}</p> <p>&darr;</p>
+                  <p>{pay.name}</p>
+                  <p
+                    className={
+                      fold === pay.id ? "iconCaretRight" : "iconCaretLeft"
+                    }
+                  >
+                    <IconCaretRight fill="var(--primary-color)" />
+                  </p>
                 </div>
                 {fold === pay.id && (
                   <div className="coffeePaymentTelebirrAccount">
-                    <code> {pay.account} </code>
+                    <code
+                      onClick={() => {
+                        navigator.clipboard.writeText(pay.account);
+                      }}
+                    >
+                      {pay.account}{" "}
+                    </code>
                     <span>({pay.holderName})</span>
                   </div>
                 )}
