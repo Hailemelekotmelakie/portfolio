@@ -44,7 +44,10 @@ export default function Coffee() {
                       fold === pay.id ? "iconCaretRight" : "iconCaretLeft"
                     }
                   >
-                    <IconCaretRight fill="var(--primary-color)" />
+                    <IconCaretRight
+                      fill="var(--primary-color)"
+                      color="var(--primary-color)"
+                    />
                   </p>
                 </div>
                 {fold === pay.id && (

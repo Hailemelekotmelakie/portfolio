@@ -176,7 +176,6 @@
     }
 
     .coffeeBold {
-        font-size: var(--largeFont);
         text-align: center;
         padding: 0 30px;
         line-height: normal;
@@ -220,7 +219,6 @@
     }
 
     .coffeeBold {
-        font-size: var(--largeFont);
         text-align: center;
         padding: 0 30px;
         line-height: normal;

@@ -4,8 +4,33 @@
     justify-content: center;
     padding: var(--padding);
     position: relative;
+    background: color-mix(in srgb, var(--black-color2) 40%, transparent);
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
 }
 
+.footerContainer p {
+    font-size: var(--smallFont);
+    padding-bottom: 50px;
+}
+
+.iconsContainerPadder {
+    padding: 15px 0;
+}
+
+.footerSocialContact {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerSocialContact a {
+    font-size: var(--mediumFont);
+    color: var(--primary-color);
+}
 
 .backToTop {
     position: fixed;
@@ -44,12 +69,8 @@
     }
 }
 
-.haha {
-    font-size: 78px;
-    width: min-content;
-    /* background: linear-gradient(45deg, rgb(255, 138, 0), rgb(229, 46, 113), rgb(102, 16, 242), rgb(0, 150, 136)); */
-    background: linear-gradient(to right, rgb(225, 29, 72), rgb(99, 102, 241), rgb(225, 29, 72));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.footerDivider {
+    height: 0.1px;
+    width: 100%;
+    background: linear-gradient(990deg, var(--gradient1))
 }

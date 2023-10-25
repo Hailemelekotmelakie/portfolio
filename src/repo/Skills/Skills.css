@@ -68,9 +68,9 @@
     z-index: 1;
     height: 9px;
     background-color: var(--primary-color);
-    background: linear-gradient(90deg, var(--gradient3));
+    background: linear-gradient(90deg, var(--gradient1));
     border-radius: 20px;
-    /* box-shadow: 0px 1px 9px var(--primary-color); */
+    box-shadow: 0px 0px 2px var(--primary-color);
 }
 
 .mySkillsLeftReact div::before {
@@ -185,7 +185,6 @@
     align-items: center;
 }
 
-
 .circleContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -209,19 +208,19 @@
 }
 
 .pie[q="50"] {
-    background-image: conic-gradient(var(--primary-color) 180deg, var(--black-color3) 180deg);
+    background-image: conic-gradient(var(--gradient1) 180deg, var(--black-color2) 180deg);
 }
 
 .pie[q="60"] {
-    background-image: conic-gradient(var(--primary-color) 216deg, var(--black-color3) 216deg);
+    background-image: conic-gradient(var(--gradient1) 216deg, var(--black-color2) 216deg);
 }
 
 .pie[q="75"] {
-    background-image: conic-gradient(var(--primary-color) 270deg, var(--black-color3) 270deg);
+    background-image: conic-gradient(var(--gradient1) 270deg, var(--black-color2) 270deg);
 }
 
 .pie[q="80"] {
-    background-image: conic-gradient(var(--primary-color) 288deg, var(--black-color3) 288deg);
+    background-image: conic-gradient(var(--gradient1) 288deg, var(--black-color2) 288deg);
 }
 
 @media screen and (max-width: 800px) {

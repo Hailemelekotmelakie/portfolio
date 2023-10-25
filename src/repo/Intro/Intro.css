@@ -70,6 +70,7 @@
     animation: 3s animateImage infinite;
 }
 
+
 @keyframes animateImage {
     0% {
         transform: translateY(-4px);

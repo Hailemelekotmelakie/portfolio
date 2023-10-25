@@ -35,7 +35,7 @@ const Intro = () => {
           />
           <SocialIcon
             className="icons"
-            network="facebook"
+            network="email"
             fgColor="var(--black-color2)"
             url="www.vimeo.com"
             bgColor="transparent"
