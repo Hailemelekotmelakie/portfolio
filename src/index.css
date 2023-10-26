@@ -1,98 +1,99 @@
-:root {
-      --extraLargeFont: 45px;
-      --largeFont: 27px;
-      --mediumFont: 16px;
-      --smallFont: 14px;
-      --extraSmallFont: 10px;
-      --padding: 5px 200px;
-      --primary-color: #6366f1;
-      --yellow-color: #efac01;
-      --black-color1: #000000;
-      --black-color2: #2d2c2c;
-      --black-color3: #9f9f9f;
-      --gradient1: #e97c00, #e52e71, #6610f2, #009688;
-      --gradient2: #e11d48, #6366f1, #e11d48;
-      --gradient3: #c72c41, #d946ef, #b663f1;
+ :root {
+       --extraLargeFont: 45px;
+       --largeFont: 27px;
+       --mediumFont: 16px;
+       --smallFont: 14px;
+       --extraSmallFont: 10px;
+       --padding: 5px 200px;
+       --primary-color: #6366f1;
+       --yellow-color: #efac01;
+       --black-color1: #000000;
+       --black-color2: #2d2c2c;
+       --black-color3: #9f9f9f;
+       --gradient1: #e97c00, #e52e71, #6610f2, #009688;
+       --gradient2: #e11d48, #6366f1, #e11d48;
+       --gradient3: #c72c41, #d946ef, #b663f1;
 
-      color-scheme: dark;
-}
+       color-scheme: dark;
+ }
 
-.light {
-      --extraLargeFont: 45px;
-      --largeFont: 27px;
-      --mediumFont: 16px;
-      --smallFont: 14px;
-      --extraSmallFont: 10px;
-      --padding: 5px 200px;
-      --primary-color: #00ab66;
-      --yellow-color: #efac01;
-      --black-color1: #ffffff;
-      --black-color2: #ebeaea;
-      --black-color3: #787878;
-      --gradient1: #ff8a00, #e52e71, #6610f2, #009688;
-      --gradient2: #e11d48, #6366f1, #e11d48;
-      --gradient3: #ff6d80, #d946ef, #b663f1;
+ .light {
+       --extraLargeFont: 45px;
+       --largeFont: 27px;
+       --mediumFont: 16px;
+       --smallFont: 14px;
+       --extraSmallFont: 10px;
+       --padding: 5px 200px;
+       --primary-color: #00ab66;
+       --yellow-color: #efac01;
+       --black-color1: #ffffff;
+       --black-color2: #ebeaea;
+       --black-color3: #787878;
+       --gradient1: #ff8a00, #e52e71, #6610f2, #009688;
+       --gradient2: #e11d48, #6366f1, #e11d48;
+       --gradient3: #ff6d80, #d946ef, #b663f1;
 
-      color-scheme: light;
-}
+       color-scheme: light;
+ }
 
-html {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      background-color: var(--black-color1);
-      color: var(--black-color3);
-      scroll-behavior: smooth;
-}
+ html {
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       background-color: var(--black-color1);
+       color: var(--black-color3);
+       scroll-behavior: smooth;
+ }
 
-input,
-button {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+ input,
+ button,
+ p {
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
 
-a {
-      text-decoration: none;
-      color: var(--black-color1);
-}
+ a {
+       text-decoration: none;
+       color: var(--black-color1);
+ }
 
-@media screen and (max-width: 800px) {
-      :root {
-            --extraLargeFont: 35px;
-            --largeFont: 20px;
-            --mediumFont: 14px;
-            --smallFont: 12px;
-            --extraSmallFont: 9px;
-            --padding: 10px 10px;
-      }
-}
+ @media screen and (max-width: 800px) {
+       :root {
+             --extraLargeFont: 35px;
+             --largeFont: 20px;
+             --mediumFont: 14px;
+             --smallFont: 12px;
+             --extraSmallFont: 9px;
+             --padding: 10px 10px;
+       }
+ }
 
-* {
-      margin: 0;
-      padding: 0;
-      transition: all .2s;
-}
+ * {
+       margin: 0;
+       padding: 0;
+       transition: all .2s;
+ }
 
-::selection {
-      background-color: var(--black-color2);
-      color: var(--primary-color);
-}
+ ::selection {
+       background-color: var(--black-color2);
+       color: var(--primary-color);
+ }
 
-/* width */
-::-webkit-scrollbar {
-      width: 10px;
-      height: 8px;
-}
+ /* width */
+ ::-webkit-scrollbar {
+       width: 10px;
+       height: 8px;
+ }
 
-/* Track */
-::-webkit-scrollbar-track {
-      background: transparent;
-      border-left: 1px solid var(--primary-color);
-}
+ /* Track */
+ ::-webkit-scrollbar-track {
+       background: transparent;
+       border-left: 1px solid var(--primary-color);
+ }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-      background: linear-gradient(45deg, var(--gradient3));
-}
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+       background: linear-gradient(45deg, var(--gradient3));
+ }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-      background: var(--primary-color)
-}
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+       background: var(--primary-color)
+ }

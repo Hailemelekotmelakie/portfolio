@@ -2,18 +2,25 @@
   display: flex;
   justify-content: space-between;
   padding: var(--padding);
-  flex-direction: row;
-  min-height: 90vh;
+  flex-direction: column;
   align-items: center;
+  gap: 40px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.sLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .my-awsome-services {
-  display: flex;
   font-size: var(--extraLargeFont);
   font-weight: 900;
   color: var(--black-color1);
-  flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .stroke-text {
@@ -24,7 +31,6 @@
 }
 
 .l-services {
-  font-weight: 900;
   color: var(--primary-color);
 }
 
@@ -44,45 +50,65 @@
   gap: 10px;
 }
 
-.sRight div {
+.sRightDiv {
   display: flex;
-  padding: 10px;
-  background-color: var(--primary-color);
-  border-radius: 7px;
   color: var(--black-color1);
-  position: relative;
-  overflow: hidden;
+  border-radius: 7px;
+  font-size: var(--largeFont);
+  animation: 1s animateSRightDiv alternate;
 }
 
-.sRightdiv::before {
-  position: absolute;
-  background-color: color-mix(in srgb, var(--primary-color) 30%, red 40%);
-  content: "";
-  align-self: center;
-  width: 60px;
-  height: 30px;
-  border-radius: 15px;
-  top: 10%;
-  left: 50%;
-  animation: 5s animatesRightDiv infinite;
-}
-
-@keyframes animatesRightDiv {
+@keyframes animateSRightDiv {
   0% {
-    left: 0%;
-  }
-
-  50% {
-    left: 60%;
+    transform: translateY(60px);
+    opacity: 0;
   }
 
   100% {
-    left: 0%;
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .services-container {
-    flex-direction: column;
+
+.sRightDiv1 {
+  display: flex;
+  color: var(--black-color1);
+  border-radius: 7px;
+  font-size: var(--largeFont);
+  animation: 1s animateSRightDiv1 alternate;
+}
+
+@keyframes animateSRightDiv1 {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
   }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+}
+
+.gg {
+  width: 100%;
+  background: linear-gradient(transparent, transparent) padding-box, linear-gradient(var(--angle),
+      #4142a9, #b38432, #4143ac) border-box;
+  border-radius: 4px;
+  animation: 8s rotate linear infinite;
+  padding: 15px;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
