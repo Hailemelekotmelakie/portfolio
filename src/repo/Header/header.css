@@ -24,12 +24,13 @@
     flex: 1;
 }
 
-.headerRight p {
+.headerRight a {
     font-size: var(--mediumFont);
     font-weight: 600;
     cursor: pointer;
     position: relative;
     align-self: center;
+    color: var(--black-color3);
 }
 
 .themeIcon {
@@ -38,7 +39,7 @@
     padding: 5px 10px;
 }
 
-.headerRight p[type="border"]:hover::before {
+.headerRight a[type="border"]:hover::before {
     content: "";
     position: absolute;
     top: 120%;

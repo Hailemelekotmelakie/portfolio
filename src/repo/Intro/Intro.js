@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 
 const Intro = () => {
   return (
-    <div className="introContainer">
+    <div id="home" className="introContainer">
       <div className="i-left">
         <div className="i-name">
           <span className="s-name">I'M HAILEMELEKOT MELAKIE</span>
@@ -22,7 +22,8 @@ const Intro = () => {
             className="icons"
             network="linkedin"
             bgColor="transparent"
-            url="www.vimeo.com"
+            url="https://www.linkedin.com/hailemelekot11"
+            target="__blank"
             fgColor="var(--black-color2)"
           />
 
@@ -31,13 +32,15 @@ const Intro = () => {
             bgColor="transparent"
             fgColor="var(--black-color2)"
             network="github"
-            url="www.vimeo.com"
+            target="__blank"
+            url="https://github.com/Hailemelekotmelakie"
           />
           <SocialIcon
             className="icons"
             network="email"
             fgColor="var(--black-color2)"
-            url="www.vimeo.com"
+            target="__blank"
+            url="mailto:Hailemelekotmelakie1991@gmail.com"
             bgColor="transparent"
           />
         </div>

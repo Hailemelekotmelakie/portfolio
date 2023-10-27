@@ -8,7 +8,6 @@ import {
   IconPhoneIncoming,
 } from "@tabler/icons-react";
 import { SocialIcon } from "react-social-icons";
-import RotatingBorder from "../../component/rotatingBorder/rotatingBorder";
 
 const Footer = () => {
   const [scrolled, setScrolled] = useState(0);
@@ -31,32 +30,33 @@ const Footer = () => {
             Hailemelekotmelakie1991@gmail.com
           </a>
         </div>
-        <RotatingBorder>
-          <div className="iconsContainer iconsContainerPadder ">
-            <SocialIcon
-              className="icons"
-              network="linkedin"
-              bgColor="transparent"
-              url="www.li.com"
-              fgColor="var(--black-color2)"
-            />
+        <div className="iconsContainer iconsContainerPadder">
+          <SocialIcon
+            className="icons"
+            network="linkedin"
+            bgColor="transparent"
+            url="https://www.linkedin.com/hailemelekot11"
+            target="__blank"
+            fgColor="var(--black-color2)"
+          />
 
-            <SocialIcon
-              className="icons"
-              bgColor="transparent"
-              fgColor="var(--black-color2)"
-              network="github"
-              url="www.git.com"
-            />
-            <SocialIcon
-              className="icons"
-              network="email"
-              fgColor="var(--black-color2)"
-              url="www.email.com"
-              bgColor="transparent"
-            />
-          </div>
-        </RotatingBorder>
+          <SocialIcon
+            className="icons"
+            bgColor="transparent"
+            fgColor="var(--black-color2)"
+            network="github"
+            target="__blank"
+            url="https://github.com/Hailemelekotmelakie"
+          />
+          <SocialIcon
+            className="icons"
+            network="email"
+            fgColor="var(--black-color2)"
+            target="__blank"
+            url="mailto:Hailemelekotmelakie1991@gmail.com"
+            bgColor="transparent"
+          />
+        </div>
         <p>Made by Hailemelekot</p>
       </div>
       {300 < scrolled && (

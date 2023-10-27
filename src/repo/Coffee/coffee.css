@@ -39,15 +39,14 @@
     flex-direction: column;
     align-self: baseline;
     color: var(--primary-color);
-
-
 }
 
 .coffeeBold span {
-    background: linear-gradient(45deg, var(--gradient2));
+    color: var(--primary-color);
+    background: linear-gradient(30deg, var(--gradient2));
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .coffeeProductivity {

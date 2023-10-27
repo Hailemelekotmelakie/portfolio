@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./header.css";
 import ThemeContext from "../../context/themeContext";
-import TooltipOnHover from "../../component/tooltipOnHover/tooltipOnHover";
 import { IconMoon, IconSun } from "@tabler/icons-react";
+import TooltipOnHover from "../../component/tooltipOnHover/tooltipOnHover";
 
 export default function Header() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -20,59 +20,52 @@ export default function Header() {
       root.classList.add("light");
       localStorage.setItem("theme", "light");
     }
-  }, [theme, root.classList]);
+  }, [theme]);
 
   const themeChange = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
+  const handleOnLinkClick = () => {
+    setIsNavOpen(false);
+  };
   return (
     <div className="headerContainer">
       <div className="headerName">
-        <TooltipOnHover direction="bottom" content="Please">
-          <span>P</span>
-        </TooltipOnHover>
-        <TooltipOnHover direction="bottom" content="Our">
-          <span>O</span>
-        </TooltipOnHover>
-        <TooltipOnHover direction="bottom" content="Recriuter">
-          <span>R</span>
-        </TooltipOnHover>
-        <TooltipOnHover direction="bottom" content="it is True">
-          <span>T</span>
-        </TooltipOnHover>
-        <TooltipOnHover direction="bottom" content="that I follow">
-          <span className="headerNameUnique">F</span>
-          <span className="headerNameUnique">O</span>
-        </TooltipOnHover>
-        <TooltipOnHover direction="bottom" content="rules">
-          <span>L</span>
-        </TooltipOnHover>
-        <TooltipOnHover direction="bottom" content="in development">
-          <span>I</span>
-        </TooltipOnHover>
-        <TooltipOnHover direction="bottom" content="O, Thank you!!">
-          <span>O</span>
-        </TooltipOnHover>
+        <span>P</span>
+        <span>O</span>
+        <span>R</span>
+        <span>T</span>
+        <span className="headerNameUnique">F</span>
+        <span className="headerNameUnique">O</span>
+        <span>L</span>
+        <span>I</span>
+        <span>O</span>
       </div>
       <div
         className={
           isNavOpen ? "headerRightOn headerRight" : "headerRightOff headerRight"
         }
       >
-        <p type="border">Home</p>
-        <p type="border">Sample</p>
-        <p type="border">Skills</p>
-        <p type="border">Services</p>
+        <a href="#home" type="border" onClick={handleOnLinkClick}>
+          Home
+        </a>
+        <a href="#Sample" type="border" onClick={handleOnLinkClick}>
+          Sample
+        </a>
+        <a href="#contact" type="border" onClick={handleOnLinkClick}>
+          contact
+        </a>
+        <a href="#skills" type="border" onClick={handleOnLinkClick}>
+          Skills
+        </a>
+        <a href="#services" type="border" onClick={handleOnLinkClick}>
+          Services
+        </a>
       </div>
-      <div
-        className="themeIcon"
-        onClick={() => {
-          themeChange();
-        }}
-      >
+      <div className="themeIcon" onClick={themeChange}>
         {theme === "dark" ? (
-          <TooltipOnHover content="Change to light mode">
+          <TooltipOnHover content="Turn to light">
             <IconMoon
               color="transparent"
               fill="var(--primary-color)"
@@ -80,7 +73,7 @@ export default function Header() {
             />
           </TooltipOnHover>
         ) : (
-          <TooltipOnHover content="Change to dark mode">
+          <TooltipOnHover content="Turn to dark">
             <IconSun color="var(--primary-color)" size={20} />
           </TooltipOnHover>
         )}

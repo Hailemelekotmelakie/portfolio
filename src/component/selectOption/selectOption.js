@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./selectOption.css";
+import { IconChevronDown } from "@tabler/icons-react";
 // import { IconChevronDown } from "@tabler/icons-react";
 
 const SelectOption = (props) => {
@@ -40,7 +41,7 @@ const SelectOption = (props) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{theme || "Programming Language"} </span>
-        {/* <IconChevronDown size={18} /> */}
+        <IconChevronDown size={18} />
       </div>
       {isOpen && (
         <div className="optionSelectBox__options">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Services.css";
 import Button from "../../component/Button/button";
+import RotatingBorder from "../../component/rotatingBorder/rotatingBorder";
 
 const Services = () => {
   const services = [
@@ -20,20 +21,20 @@ const Services = () => {
   }, 4000);
 
   return (
-    <div className="services-container">
+    <div id="services" className="services-container">
       <div className="sLeft">
         <div className="my-awsome-services">
           <span className="stroke-text">MY AWOSOME</span>{" "}
           <span className="l-services">SERVICES</span>
         </div>
       </div>
-      <div className="gg">
+      <RotatingBorder>
         <div className="sRight">
           <div className={active % 2 === 0 ? "sRightDiv" : "sRightDiv1"}>
             {services[active - 1]}
           </div>
         </div>
-      </div>
+      </RotatingBorder>
 
       <div className="cv-resume">
         <Button>Download CV</Button>

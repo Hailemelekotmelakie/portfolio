@@ -10,11 +10,11 @@
 
 .mySkillsHeading {
     padding: 5px 0;
-    color: var(--primary-color);
     align-self: center;
     font-size: var(--extraLargeFont);
-    background: linear-gradient(30deg, var(--gradient2));
     font-weight: 900;
+    color: var(--primary-color);
+    background: linear-gradient(30deg, var(--gradient2));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

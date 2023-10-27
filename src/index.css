@@ -24,12 +24,12 @@
        --smallFont: 14px;
        --extraSmallFont: 10px;
        --padding: 5px 200px;
-       --primary-color: #00ab66;
+       --primary-color: #6366f1;
        --yellow-color: #efac01;
        --black-color1: #ffffff;
-       --black-color2: #ebeaea;
+       --black-color2: #d3d4f3;
        --black-color3: #787878;
-       --gradient1: #ff8a00, #e52e71, #6610f2, #009688;
+       --gradient1: #ffda7d, #48ffed, #6366f1;
        --gradient2: #e11d48, #6366f1, #e11d48;
        --gradient3: #ff6d80, #d946ef, #b663f1;
 
@@ -45,7 +45,8 @@
 
  input,
  button,
- p {
+ p,
+ textarea {
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 
@@ -68,12 +69,12 @@
  * {
        margin: 0;
        padding: 0;
-       transition: all .2s;
+       transition: all .1s;
  }
 
  ::selection {
-       background-color: var(--black-color2);
-       color: var(--primary-color);
+       background-color: var(--primary-color);
+       color: var(--black-color2);
  }
 
  /* width */

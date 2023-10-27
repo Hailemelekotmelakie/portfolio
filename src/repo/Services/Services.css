@@ -48,11 +48,13 @@
   justify-content: center;
   flex-direction: column;
   gap: 10px;
+  padding: 20px;
+  min-width: 70vh;
 }
 
 .sRightDiv {
   display: flex;
-  color: var(--black-color1);
+  color: var(--black-color3);
   border-radius: 7px;
   font-size: var(--largeFont);
   animation: 1s animateSRightDiv alternate;
@@ -60,7 +62,7 @@
 
 @keyframes animateSRightDiv {
   0% {
-    transform: translateY(60px);
+    transform: translateY(30px);
     opacity: 0;
   }
 
@@ -73,7 +75,7 @@
 
 .sRightDiv1 {
   display: flex;
-  color: var(--black-color1);
+  color: var(--black-color3);
   border-radius: 7px;
   font-size: var(--largeFont);
   animation: 1s animateSRightDiv1 alternate;
@@ -81,7 +83,7 @@
 
 @keyframes animateSRightDiv1 {
   0% {
-    transform: translateY(60px);
+    transform: translateY(30px);
     opacity: 0;
   }
 
@@ -89,26 +91,4 @@
     transform: translateY(0px);
     opacity: 1;
   }
-
-}
-
-.gg {
-  width: 100%;
-  background: linear-gradient(transparent, transparent) padding-box, linear-gradient(var(--angle),
-      #4142a9, #b38432, #4143ac) border-box;
-  border-radius: 4px;
-  animation: 8s rotate linear infinite;
-  padding: 15px;
-}
-
-@keyframes rotate {
-  to {
-    --angle: 360deg;
-  }
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
 }
