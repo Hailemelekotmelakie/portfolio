@@ -48,8 +48,8 @@
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  padding: 20px;
-  min-width: 70vh;
+  padding: 20px 10px;
+  min-width: 50vh;
 }
 
 .sRightDiv {

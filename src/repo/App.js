@@ -7,6 +7,7 @@ import Footer from "./Footer/Footer";
 import Coffee from "./Coffee/Coffee";
 import Contact from "./Contact/Contact";
 import Skills from "./Skills/Skills";
+import Testimonials from "./testimonials/testimonials";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <Coffee />
       <Skills />
+      <Testimonials />
       <Contact />
       <Footer />
     </ThemeContext.Provider>

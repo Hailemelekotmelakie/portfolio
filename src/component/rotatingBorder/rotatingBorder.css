@@ -2,8 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: auto;
     border: 3px solid transparent;
     border-radius: 12px;
     background: linear-gradient(var(--black-color1), var(--black-color1)) padding-box, linear-gradient(var(--angle),

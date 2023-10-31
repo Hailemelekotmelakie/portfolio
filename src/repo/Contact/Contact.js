@@ -7,7 +7,6 @@ const Contact = () => {
   const Arrays = ["React JS", "Node JS", "Vue JS", "Express JS"];
   return (
     <div className="contactContainer">
-      <div className="contactBlur"></div>
       <div className="c-left">
         <span className="contact-us">Contact Us</span>
         <div>
