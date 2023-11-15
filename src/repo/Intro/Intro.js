@@ -48,7 +48,7 @@ const Intro = () => {
       <div className="i-right">
         <img
           className="imageFromGondar"
-          src={"/images/gonna edit.jpg"}
+          src={"/images/onna edit.jpg"}
           alt="MinePhoto"
           height={"100%"}
           width={"100%"}
