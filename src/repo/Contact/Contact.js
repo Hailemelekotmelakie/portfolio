@@ -1,12 +1,71 @@
-import React from "react";
+import React, { useState, useRef, useCallback } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
-import SelectOption from "../../component/selectOption/selectOption";
-import Button from "../../component/Button/button";
 import { IconMessageCircle2Filled, IconPhoneFilled } from "@tabler/icons-react";
+import SuccessModal from "../../component/modal/successModal/successModal";
+import FailureModal from "../../component/modal/failureModal/failureModal";
+
 const Contact = () => {
-  const Arrays = ["React JS", "Node JS", "Vue JS", "Express JS"];
+  const form = useRef();
+  const [type, setType] = useState(null);
+  const [body, setBody] = useState(null);
+  const [header, setHeader] = useState(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (form.current.user_name.value === "") {
+      setType(false);
+      setHeader("Failure");
+      setBody("Name mustn't be empty");
+      seTimouter();
+    } else if (form.current.user_email.value === "") {
+      setType(false);
+      setHeader("Failure");
+      setBody("Email mustn't be empty");
+      seTimouter();
+    } else if (form.current.message.value === "") {
+      setType(false);
+      setHeader("Failure");
+      setBody("Message mustn't be empty");
+      seTimouter();
+    } else {
+      emailjs
+        .sendForm(
+          "service_3bq6lo9",
+          "template_l19u5d4",
+          form.current,
+          "yYb__3U7NmQCVqgW1"
+        )
+        .then(
+          (result) => {
+            setType(true);
+            setHeader("Success Message");
+            setBody("I will contact shortly");
+            seTimouter();
+          },
+          (error) => {
+            setType(false);
+            setHeader("Failure");
+            setBody("Something went wrong! Try again.");
+            seTimouter();
+          }
+        );
+    }
+  };
+
+  const seTimouter = useCallback(() => {
+    setTimeout(() => {
+      setType(null);
+      setHeader(null);
+      setBody(null);
+    }, 3000);
+  }, []);
+
   return (
     <div className="contactContainer">
+      {type === false && <FailureModal header={header} body={body} />}
+      {type === true && <SuccessModal header={header} body={body} />}
       <div className="c-left">
         <span className="contact-us">Contact Us</span>
         <div>
@@ -23,17 +82,32 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <div id="contactMePlease" className="c-right">
-        <input type="text" className="c-text" placeholder="Your Name" />
+      <form
+        id="contactMePlease"
+        className="c-right"
+        ref={form}
+        onSubmit={sendEmail}
+      >
+        <input
+          type="text"
+          className="c-text"
+          name="user_name"
+          placeholder="Your Name"
+        />
         <input
           type="email"
+          name="user_email"
           className="c-text"
           placeholder="Your email address"
         />
-        <textarea className="c-text" rows={4} placeholder="Message" />
-        <SelectOption Arrays={Arrays} />
-        <Button>Send</Button>
-      </div>
+        <textarea
+          className="c-text"
+          name="message"
+          rows={4}
+          placeholder="Message"
+        />
+        <input type="submit" value="Send" className="componentButton" />
+      </form>
     </div>
   );
 };

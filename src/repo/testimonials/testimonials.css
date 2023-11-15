@@ -38,12 +38,10 @@
 @keyframes animateForTesti2 {
     0% {
         transform: translateX(-100%) translateY(20px);
-        opacity: 0;
     }
 
     100% {
         transform: translateX(0%) translateY(-20px);
-        opacity: 1;
     }
 }
 
@@ -53,12 +51,10 @@
 
 @keyframes animateForTesti1 {
     0% {
-        opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(60px);
     }
 
     100% {
-        opacity: 1;
         transform: translateY(20px);
     }
 }
@@ -69,13 +65,10 @@
 
 @keyframes animateForTesti3 {
     0% {
-        transform: translateX(-50%) translateY(-20px);
-        opacity: 0;
-
+        transform: translateX(-100%) translateY(-20px);
     }
 
     100% {
-        opacity: 1;
         transform: translateX(0%) translateY(20px);
     }
 }
@@ -94,7 +87,6 @@
 .testiParagraph {
     font-size: var(--smallFont);
     padding: 15px 0px;
-    font-weight: lighter;
     font-style: italic;
     border-bottom: thin solid var(--black-color3);
     text-align: justify;

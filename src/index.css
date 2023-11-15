@@ -10,6 +10,7 @@
        --black-color1: #000000;
        --black-color2: #2d2c2c;
        --black-color3: #9f9f9f;
+       --red-color: #e11d48;
        --gradient1: #e97c00, #e52e71, #6610f2, #009688;
        --gradient2: #e11d48, #6366f1, #e11d48;
        --gradient3: #c72c41, #d946ef, #b663f1;
@@ -29,6 +30,7 @@
        --black-color1: #ffffff;
        --black-color2: #efefef;
        --black-color3: #787878;
+       --red-color: #e11d48;
        --gradient1: #ffda7d, #48ffed, #6366f1;
        --gradient2: #e11d48, #6366f1, #e11d48;
        --gradient3: #ff6d80, #d946ef, #b663f1;

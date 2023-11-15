@@ -36,7 +36,7 @@
     position: fixed;
     bottom: 15px;
     right: 14.8%;
-    z-index: 10px;
+    z-index: 10;
     background-color: color-mix(in srgb, var(--black-color2) 50%, transparent);
     color: var(--black-color3);
     padding: 10px;

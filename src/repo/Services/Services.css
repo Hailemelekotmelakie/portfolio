@@ -47,9 +47,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
   padding: 20px 10px;
-  min-width: 50vh;
+  min-width: 60vh;
 }
 
 .sRightDiv {
@@ -90,5 +89,12 @@
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sRight {
+    padding: 20px 10px;
+    min-width: 35vh;
   }
 }
