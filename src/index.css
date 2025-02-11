@@ -7,6 +7,7 @@
        --padding: 5px 200px;
        --primary-color: #6366f1;
        --yellow-color: #efac01;
+       --black-color0: #121212;
        --black-color1: #000000;
        --black-color2: #2d2c2c;
        --black-color3: #9f9f9f;
@@ -27,8 +28,9 @@
        --padding: 5px 200px;
        --primary-color: #6366f1;
        --yellow-color: #efac01;
+       --black-color0: #e0fff9;
        --black-color1: #ffffff;
-       --black-color2: #efefef;
+       --black-color2: #e0fff9;
        --black-color3: #787878;
        --red-color: #e11d48;
        --gradient1: #ffda7d, #48ffed, #6366f1;

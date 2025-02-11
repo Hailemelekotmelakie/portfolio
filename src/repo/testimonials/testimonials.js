@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./testimonials.css";
 import {
   IconCircleChevronRight,
-  IconCircleChevronLeft,
+  IconCircleChevronLeft
 } from "@tabler/icons-react";
 
 export default function Testimonials() {
@@ -18,38 +18,38 @@ export default function Testimonials() {
 
   const testi = [
     {
-      name: "Hailemelekot",
-      job: "Web develper",
-      desc: "I am a fullstack web developer, with two years of experience.I am a fullstack web developer, with two years of experience",
-      imageUrl: "/images/mine.jpg",
+      name: "Melakamu Fentahun",
+      job: "fullstack develper",
+      desc: "I am a fullstack web developer since 2019 GC",
+      imageUrl: "/images/mine.jpg"
     },
     {
-      name: "Takele Arega",
-      job: "Web develper",
-      desc: "I am a fullstack web developer, with two years of experience.I am a fullstack web developer, with two years of experience",
-      imageUrl: "/images/onna edit.jpg",
+      name: "Mekonen Messay",
+      job: "Web developer",
+      desc: "Computer Engineer since 2020 GC",
+      imageUrl: "/images/DTU Logo.png"
     },
     {
-      name: "Mekdim Tamirat",
-      job: "Web develper",
-      desc: "I am a fullstack web developer, with two years of experience.I am a fullstack web developer, with two years of experience",
-      imageUrl: "/images/facebook.png",
+      name: "Markos Natnael",
+      job: "Web developer and Lecturer",
+      desc: "Lecturer and Engineer in Ethiopia",
+      imageUrl: "/images/facebook.png"
     },
     {
-      name: "Tsega Getnet",
-      job: "Web develper",
-      desc: "I am a fullstack web developer, with two years of experience.I am a fullstack web developer, with two years of experience",
-      imageUrl: "/images/DTU Logo.png",
+      name: "Getnet Adane",
+      job: "Computer Engineer",
+      desc: "Programmer",
+      imageUrl: "/images/DTU Logo.png"
     },
     {
-      name: "Shanbel Kassa",
-      job: "Web develper",
-      desc: "I am a fullstack web developer, with two years of experience.I am a fullstack web developer, with two years of experience",
-      imageUrl: "/images/coffee-thumbnail.png",
-    },
+      name: "Asrat Mau",
+      job: "Frontend Developer",
+      desc: "Frontend developer",
+      imageUrl: "/images/coffee-thumbnail.png"
+    }
   ];
   return (
-    <div className="testimonialsContainer">
+    <div id="sample" className="testimonialsContainer">
       <h1>People's Testimonial</h1>
       <div className="testiHigher">
         <div className={activator ? "testis testi1Forward" : "testis"}>

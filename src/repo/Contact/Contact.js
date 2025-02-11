@@ -16,17 +16,17 @@ const Contact = () => {
 
     if (form.current.user_name.value === "") {
       setType(false);
-      setHeader("Failure");
+      setHeader("Failed");
       setBody("Name mustn't be empty");
       seTimouter();
     } else if (form.current.user_email.value === "") {
       setType(false);
-      setHeader("Failure");
+      setHeader("Failed");
       setBody("Email mustn't be empty");
       seTimouter();
     } else if (form.current.message.value === "") {
       setType(false);
-      setHeader("Failure");
+      setHeader("Failed");
       setBody("Message mustn't be empty");
       seTimouter();
     } else {
@@ -46,7 +46,7 @@ const Contact = () => {
           },
           (error) => {
             setType(false);
-            setHeader("Failure");
+            setHeader("Failed");
             setBody("Something went wrong! Try again.");
             seTimouter();
           }
@@ -82,12 +82,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <form
-        id="contactMePlease"
-        className="c-right"
-        ref={form}
-        onSubmit={sendEmail}
-      >
+      <form id="contact" className="c-right" ref={form} onSubmit={sendEmail}>
         <input
           type="text"
           className="c-text"
@@ -104,8 +99,9 @@ const Contact = () => {
           className="c-text"
           name="message"
           rows={4}
-          placeholder="Message"
+          placeholder="The form is temporarly not working 😊"
         />
+        <p>This form is currently not working 😊</p>
         <input type="submit" value="Send" className="componentButton" />
       </form>
     </div>

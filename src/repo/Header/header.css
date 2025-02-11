@@ -37,6 +37,7 @@
     transform: translateY(2px);
     cursor: pointer;
     padding: 5px 10px;
+    margin-bottom: 5px;
 }
 
 .headerRight a[type="border"]:hover::before {

@@ -12,6 +12,15 @@ export default function Header() {
   useEffect(() => {
     const preTheme = localStorage.getItem("theme");
     if (preTheme === "light") {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  }, []);
+
+  useEffect(() => {
+    const preTheme = localStorage.getItem("theme");
+    if (preTheme === "light") {
       root.classList.remove("light");
       root.classList.add("dark");
       localStorage.setItem("theme", "dark");
@@ -20,7 +29,7 @@ export default function Header() {
       root.classList.add("light");
       localStorage.setItem("theme", "light");
     }
-  }, [theme]);
+  }, [theme, root.classList]);
 
   const themeChange = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -33,13 +42,13 @@ export default function Header() {
     <div className="headerContainer">
       <div className="headerName">
         <span>P</span>
-        <span>O</span>
+        <span className="headerNameUnique">O</span>
         <span>R</span>
-        <span>T</span>
+        <span className="headerNameUnique">T</span>
         <span className="headerNameUnique">F</span>
         <span className="headerNameUnique">O</span>
         <span>L</span>
-        <span>I</span>
+        <span className="headerNameUnique">I</span>
         <span>O</span>
       </div>
       <div
@@ -48,19 +57,19 @@ export default function Header() {
         }
       >
         <a href="#home" type="border" onClick={handleOnLinkClick}>
-          Home
+          HOME
         </a>
-        <a href="#Sample" type="border" onClick={handleOnLinkClick}>
-          Sample
+        <a href="#sample" type="border" onClick={handleOnLinkClick}>
+          SAMPLE
         </a>
         <a href="#contact" type="border" onClick={handleOnLinkClick}>
-          contact
+          CONTACTS
         </a>
         <a href="#skills" type="border" onClick={handleOnLinkClick}>
-          Skills
+          SKILLS
         </a>
         <a href="#services" type="border" onClick={handleOnLinkClick}>
-          Services
+          SERVICES
         </a>
       </div>
       <div className="themeIcon" onClick={themeChange}>

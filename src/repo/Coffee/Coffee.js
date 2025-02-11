@@ -9,14 +9,14 @@ export default function Coffee() {
       id: 1,
       name: "TELEBIRR",
       account: "+251947053537",
-      holderName: "Hailemelekot",
+      holderName: "Hailemelekot"
     },
     {
       id: 2,
       name: "BITCOIN",
-      account: "251947053537251947053537",
-      holderName: "BITCOIN ADDRESS",
-    },
+      account: "-------------------------",
+      holderName: "BITCOIN ADDRESS"
+    }
   ];
 
   return (

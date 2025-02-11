@@ -12,7 +12,7 @@ const Intro = () => {
           <span className="s-description">
             I am a fullstack web developer, with two years of experience.
           </span>
-          <a href="#contactMePlease" style={{ alignSelf: "center" }}>
+          <a href="#contact" style={{ alignSelf: "center" }}>
             <Button>Work with me</Button>
           </a>
           <div className="i-blur1"></div>
@@ -22,7 +22,7 @@ const Intro = () => {
             className="icons"
             network="linkedin"
             bgColor="transparent"
-            url="https://www.linkedin.com/hailemelekot11"
+            url="https://www.linkedin.com/in/hailemelekot12/"
             target="__blank"
             fgColor="var(--black-color2)"
           />

@@ -5,7 +5,7 @@ import TooltipOnHover from "../../component/tooltipOnHover/tooltipOnHover";
 import {
   IconArrowUp,
   IconMessages,
-  IconPhoneIncoming,
+  IconPhoneIncoming
 } from "@tabler/icons-react";
 import { SocialIcon } from "react-social-icons";
 
@@ -35,7 +35,7 @@ const Footer = () => {
             className="icons"
             network="linkedin"
             bgColor="transparent"
-            url="https://www.linkedin.com/hailemelekot11"
+            url="https://www.linkedin.com/in/hailemelekot12/"
             target="__blank"
             fgColor="var(--black-color2)"
           />

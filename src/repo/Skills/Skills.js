@@ -79,7 +79,7 @@ const Skills = () => {
                 <TooltipOnHover direction="bottom" content="about 75%">
                   <div className="pie" q="75"></div>
                 </TooltipOnHover>
-                <p id="contact">Communication</p>
+                <p>Communication</p>
               </div>
             </div>
           </div>
