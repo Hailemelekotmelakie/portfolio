@@ -49,13 +49,12 @@ const ScrollProgress = () => {
               transition: "stroke-dashoffset 0.2s linear",
             }}
           />
- 
+
           <defs>
             <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#00f260" />
+              <stop offset="0%" stopColor="#f20000ff" />
               <stop offset="100%" stopColor="#0575E6" />
             </linearGradient>
- 
           </defs>
         </svg>
       </div>
