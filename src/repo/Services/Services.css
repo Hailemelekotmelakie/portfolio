@@ -16,7 +16,7 @@
 }
 
 .my-awsome-services {
-  font-size: var(--extraLargeFont);
+  font-size: var(--largeFont);
   font-weight: 900;
   color: var(--black-color1);
   margin-bottom: 10px;
@@ -24,16 +24,15 @@
 }
 
 .stroke-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: transparent;
   -webkit-text-stroke: var(--primary-color);
   -webkit-text-stroke-width: 1px;
-
 }
 
 .l-services {
   color: var(--primary-color);
 }
-
 
 .cv-resume {
   display: flex;
@@ -70,7 +69,6 @@
     opacity: 1;
   }
 }
-
 
 .sRightDiv1 {
   display: flex;

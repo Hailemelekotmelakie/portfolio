@@ -10,6 +10,7 @@ const Contact = () => {
   const [type, setType] = useState(null);
   const [body, setBody] = useState(null);
   const [header, setHeader] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -30,6 +31,7 @@ const Contact = () => {
       setBody("Message mustn't be empty");
       seTimouter();
     } else {
+      setLoading(true);
       emailjs
         .sendForm(
           "service_3bq6lo9",
@@ -50,7 +52,10 @@ const Contact = () => {
             setBody("Something went wrong! Try again.");
             seTimouter();
           }
-        );
+        )
+        .finally(() => {
+          setLoading(false);
+        });
     }
   };
 
@@ -102,7 +107,11 @@ const Contact = () => {
           placeholder="The form is temporarly not working 😊"
         />
         <p>This form is currently not working 😊</p>
-        <input type="submit" value="Send" className="componentButton" />
+        <input
+          type="submit"
+          value={loading ? "Sending ..." : "Send"}
+          className="componentButton"
+        />
       </form>
     </div>
   );

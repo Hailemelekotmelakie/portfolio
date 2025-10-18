@@ -40,8 +40,18 @@
   color-scheme: light;
 }
 
+@font-face {
+  font-family: "MiguerSans";
+  src: url("/public/fonts/miguersansregular-g3nqa.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.custom-font {
+  font-family: "MiguerSans", sans-serif;
+}
+
 html {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: var(--black-color1);
   color: var(--black-color3);
   scroll-behavior: smooth;
@@ -52,7 +62,7 @@ input,
 button,
 p,
 textarea {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
