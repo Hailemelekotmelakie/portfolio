@@ -1,6 +1,5 @@
 import Reveal from "./Reveal.jsx";
 import { projects } from "../data/data.jsx";
-import "./Projects.css";
 
 export default function Projects() {
   return (
@@ -20,16 +19,6 @@ export default function Projects() {
               className={`proj-card ${project.featured ? "featured" : ""}`.trim()}
               key={project.title}
             >
-              {project.image && (
-                <div className="proj-image">
-                  <img
-                    src={project.image}
-                    alt={project.imageAlt || `${project.title} UI preview`}
-                    loading="lazy"
-                  />
-                </div>
-              )}
-
               <div className="proj-top">
                 <div>
                   <h3>{project.title}</h3>
