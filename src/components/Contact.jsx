@@ -1,5 +1,5 @@
 import Reveal from "./Reveal";
-import { profile } from "../data.jsx";
+import { profile } from "../data/data.jsx";
 
 export default function Contact() {
   return (
@@ -10,7 +10,10 @@ export default function Contact() {
             <span className="dot"></span>CONTACT
           </div>
           <h2>Let&apos;s build something</h2>
-          <p>Open to new opportunities. Reach out through any of the channels below.</p>
+          <p>
+            Open to new opportunities. Reach out through any of the channels
+            below.
+          </p>
         </Reveal>
 
         <Reveal className="contact-term">
@@ -28,7 +31,12 @@ export default function Contact() {
           </div>
           <div className="contact-line">
             <span className="cmd">$ contact --linkedin</span>
-            <a className="val" href={profile.linkedin} target="_blank" rel="noopener noreferrer">
+            <a
+              className="val"
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {profile.linkedinLabel}
             </a>
           </div>

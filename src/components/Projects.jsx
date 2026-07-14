@@ -1,5 +1,5 @@
 import Reveal from "./Reveal";
-import { projects } from "../data.jsx";
+import { projects } from "../data/data.jsx";
 
 export default function Projects() {
   return (

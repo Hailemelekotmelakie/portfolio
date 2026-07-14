@@ -1,5 +1,5 @@
 import Reveal from "./Reveal";
-import { summary } from "../data.jsx";
+import { summary } from "../data/data.jsx";
 
 export default function About() {
   return (

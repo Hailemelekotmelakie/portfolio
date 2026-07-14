@@ -1,5 +1,5 @@
 import useTypewriter from "../hooks/useTypewriter";
-import { profile, roles } from "../data.jsx";
+import { profile, roles } from "../data/data.jsx";
 import Radar from "./Radar";
 import { IconMapPin, IconMessage2, IconPhoneCall } from "@tabler/icons-react";
 

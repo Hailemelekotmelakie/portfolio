@@ -2,8 +2,6 @@ import { useEffect, useRef } from "react";
 
 /**
  * Adds the "in" class to an element once it scrolls into view, matching
- * the original page's .reveal / .reveal.in fade-up behavior.
- * Attach the returned ref to any element that has the "reveal" class.
  */
 export default function useReveal() {
   const ref = useRef(null);
@@ -21,7 +19,7 @@ export default function useReveal() {
           }
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.12 },
     );
 
     observer.observe(el);

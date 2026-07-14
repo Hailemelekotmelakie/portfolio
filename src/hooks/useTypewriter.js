@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 
 /**
  * Cycles through `words`, typing and deleting each one, mirroring the
- * original vanilla-JS typewriter effect.
  */
-export default function useTypewriter(words, { typeSpeed = 65, deleteSpeed = 35, pause = 1400 } = {}) {
+export default function useTypewriter(
+  words,
+  { typeSpeed = 65, deleteSpeed = 35, pause = 1400 } = {},
+) {
   const [text, setText] = useState("");
 
   useEffect(() => {

@@ -1,5 +1,5 @@
 import Reveal from "./Reveal";
-import { experience } from "../data.jsx";
+import { experience } from "../data/data.jsx";
 import { IconLeaf } from "@tabler/icons-react";
 
 export default function Experience() {

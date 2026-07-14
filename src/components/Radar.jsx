@@ -1,4 +1,4 @@
-import { radarBlips } from "../data.jsx";
+import { radarBlips } from "../data/data.jsx";
 
 export default function Radar() {
   return (

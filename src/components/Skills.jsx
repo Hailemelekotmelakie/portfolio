@@ -1,5 +1,5 @@
 import Reveal from "./Reveal";
-import { skillGroups } from "../data.jsx";
+import { skillGroups } from "../data/data.jsx";
 
 export default function Skills() {
   return (

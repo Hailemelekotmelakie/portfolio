@@ -1,4 +1,4 @@
-import { navLinks, profile } from "../data.jsx";
+import { navLinks, profile } from "../data/data.jsx";
 
 export default function Navbar() {
   return (
