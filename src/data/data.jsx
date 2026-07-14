@@ -14,14 +14,18 @@ export const profile = {
 };
 
 export const roles = [
-  "Software Engineer",
-  "Full-Stack Web Developer",
+  "Frontend developer",
+  "Backend developer",
+  "Mobile App developer",
+  "Full-Stack Developer",
   "Real-Time Systems Builder",
 ];
 
 export const radarBlips = [
-  { label: "React.js", top: "18%", left: "62%", variant: "" },
-  { label: "Node.js", top: "32%", left: "22%", variant: "amber" },
+  { label: "React", top: "18%", left: "62%", variant: "" },
+  { label: "Node", top: "32%", left: "22%", variant: "amber" },
+  { label: "Next", top: "50%", left: "12%", variant: "cyan" },
+  { label: "FastApi", top: "30%", left: "82%", variant: "amber" },
   { label: "Socket.io", top: "52%", left: "80%", variant: "cyan" },
   { label: "Redux.js", top: "70%", left: "30%", variant: "" },
   { label: "WebSocket", top: "78%", left: "64%", variant: "amber" },
@@ -62,8 +66,8 @@ export const experience = [
     eduNote: null,
   },
   {
-    dateRange: "JAN 2023 - JAN 2024",
-    badges: ["1yr 1mo", "On-site"],
+    dateRange: "DEC 2022 - JAN 2024",
+    badges: ["1yr 2mo", "On-site"],
     role: "Web Developer",
     company: "Ethioden ICT Consultancy PLC - Ethiopia",
     bullets: [
@@ -85,6 +89,7 @@ export const projects = [
     sub: "Tern Systems - Mission-critical / Real-time",
     status: "Deployed",
     featured: true,
+    image: "./projects/Nexus_screenshot.png",
     desc: "End-to-end architecture and delivery of a production-ready ATM platform - live aircraft tracking, real-time data streams and operational workflow management, built for a domain where latency and accuracy aren't optional.",
     tags: [
       "React.js",
@@ -101,6 +106,7 @@ export const projects = [
     sub: "Ethioden ICT Consultancy PLC - Full-cycle delivery",
     status: "Shipped",
     featured: false,
+    image: "./projects/Node_finance.png",
     desc: "A suite of client-facing web applications spanning front-end interfaces and back-end REST services, taken from requirements through deployment with a focus on cross-browser reliability and accessibility.",
     tags: [
       "JavaScript",
