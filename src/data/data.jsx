@@ -14,9 +14,9 @@ export const profile = {
 };
 
 export const roles = [
-  "Frontend developer",
-  "Backend developer",
-  "Mobile App developer",
+  "Frontend Developer",
+  "Backend Developer",
+  "Mobile App Developer",
   "Full-Stack Developer",
   "Real-Time Systems Builder",
 ];
